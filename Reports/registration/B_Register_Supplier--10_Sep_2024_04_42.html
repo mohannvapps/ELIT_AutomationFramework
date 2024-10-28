@@ -1,0 +1,992 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">10-09-2024 4.42.58 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name"> - Sup_RegistrationTest</p>
+            <p class="text-sm">
+              <span>4.42.59 PM</span> / <span>146625.27 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail"> - Sup_RegistrationTest</h5>
+                  <span class='badge badge-success'>10-09-2024 4.42.59 PM</span>
+                  <span class='badge badge-danger'>10-09-2024 4.45.25 PM</span>
+                  <span class='badge badge-default'>146625.27 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+  <div class="row mb-3">
+   <div class="col-md-3">
+     <img data-featherlight='Screenshots\Screenshot_10_09_2024_04_45.png' src="Screenshots\Screenshot_10_09_2024_04_45.png">
+  </div>
+ </div>
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC001 | Page is Redirected To Elit Login Page        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC002 | Login Page refresh is Successful        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC003 & TC004 | Clicked on Supplier registration Button        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC005 | Terms & Condition Screen Refresh is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC006 | Go Back to Login Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC007 | Go Back to Login is Clicked        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC008 | Terms & Condition Page Scroll Function is working        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC009 & TC010 | T&C Accordion is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC011 | Decline Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC012 | Clicked on Decline Button, and Cleared Error toast        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC013 | Go Back to Login Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC014 | Agree Button is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC015 | Registration Page Refresh Successful        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC016 | All Company Info Text Fields are Visible        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC017 | Company Name is Field Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC018 | Clicked on Submit button without Fill the data & Found Error Message        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC019 | Cleared all the Error Messages        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC020 | Company Name Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC021 | Company Name mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC022 | Not Allowewd to Enter Space/Special Characters in the beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC023 | Allowewd to Enter the Company Name Upto 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC024 | Not Allowewd to Enter the Company Name Above 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC026 | Duplicate Company Name validation is Successful        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC027 | Company Name Contains Only Upper Case Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC028 | Company Name Field Validation Green Tick mark Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC029 | License Number Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC030 | License Number mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC031 | Company Info Fields are Disabled when Duplicate Company Name is Entered        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC032 | Not Allowewd to Enter Space/Special Characters in the beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC033 | Allowewd to Enter the License Number Upto 10 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC034 | Not Allowewd to Enter the License Number Above 10 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC035 | License Number Field Not taking Special Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC036 | Duplicate License Number validation is Successful        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC037 | License Number Field Not taking Special Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC038 | License Number Field Validation Green Tick mark Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC039 | License Number Field Validation Green Tick mark Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC040 | Establishment Date Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC041 | Establishment Date mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC042 | Establishment Date is Selected From Dropdown        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC043 | Invalid Establishment Date is Cleared        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC044 | Establishment Date Year and Month Select Dropdown is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC045 | Valid Establishment Date is Selected        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC046 | Add Attachment Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC047 | Page is redirected to Attachment Screen        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC048 | All Fields of the Attachment Screen is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC049 | Upload File Field is Displayed for the Document Type 'File'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC050 | Attachment Title Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC051 | Attachment Title Mandatory Symbol is displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC052 | Attachment Title Field Taking Upto 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC053 | Attachment Title Field Not Taking Above 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.43 PM</td>
+        <td>
+TC054 | Attachment Title Field Not Taking Space in the Beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC055 | Found Field Error Message for Clicking Submit Button without Passing Data        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC057 | System is Allowed to Enter The Valid Title        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC058 | Document Type Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC059 | Document Type Field is Mandatory        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC061 | Document Type Select is verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC062 | Document Type is Options are Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC063 | Manually Entered Document Type        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC074 | Document Category is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC075 | Document Category Mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC077 | Document Category is Selected        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC078 | Document Category is Re-Selected        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC079 | Document Category is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC082 | Description Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC083 | Description Field Mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC084 | Description Field Taking Upto 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC085 | Description Field Not Taking Above 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC086 | Description Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC088 | Submit Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC089 | Submit Button is Clicked and Displayed Successful Toast        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC090 | Attachment Delete Icon is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC091 | Attachment is Not Deleted When Clicked on Cancel        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC092 | Attachment Deleted Successfully When Clicked on OK        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC093 | Successfully Deleted Toast is displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC094 | Attachment Cancel Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC095 | Page Redirect to Registration Screen When Clicked on Attachment Cancel Button        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC096 | Attachment Edit is Successful        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC097 | Attachment Edit is Successful        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC102 | Contact Information Accordion is Opened        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC103 | Contact Information Accordion is Closed when Clicked        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC104 | All the Contact Information Fields are Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC105 | Field Error Messages are Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC107 | Title Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC108 | Title Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC110 | Title Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC112 | First Name Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC113 | First Name Mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC114 | Not Allowewd to Enter Space/Special Characters in the beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC115 | Allowewd to Enter the First Name Upto 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC116 | Not Allowewd to Enter the First Name Above 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC118 | First Name Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC119 | Middle Name Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC120 | Mandatory Symbol is Not Displayed for Middle Name        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC121 | Not Allowewd to Enter Space/Special Characters in the beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC122 | Allowewd to Enter the Middle Name Upto 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC123 | Not Allowewd to Enter the Middle Name Above 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC124 | Middle Name Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC126 | Last Name Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC127 | Last Name Field mandatory Symbol is displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC128 | Last Name Field Not Allowed Space in the Beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC129 | Allowewd to Enter the Last Name Upto 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC130 | Not Allowewd to Enter the Last Name Above 80 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC131 | Last Name Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC133 | Email Address Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC134 | Email Address Field Mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC135 | Email Address Field is Not Accepting Space in the Beginning        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC136 | Allowewd to Enter the Email Upto 70 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC137 | Not Allowewd to Enter the Email Above 70 Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC138 | Found Error message for Duplicate Email        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC139 | Found Error message for Invalid Email        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC140 | Email Address Green Tick mark is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC141 | Phone Number Field is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.44 PM</td>
+        <td>
+TC142 | Phone Number Field Mandatory Symbol is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC144 | Phone Number Code is Changed as per the Selected Flag        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC145 | Phone Number is Cleared when the Fag is Changed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC146 | Invalid Phone Number Error is Displayed        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC147 | Phone Number Field Not Acceptine Space and Special Characters        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC149 | Phone Number Field is Verified        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC150 | Submit Button is Enabled        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>04.45 PM</td>
+        <td>
+TC151 | Timed out after 10 seconds        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>04.45 PM</td>
+        <td>
+Snapshot below: AventStack.ExtentReports.ExtentTest        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>10-09-2024 4.42.58 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>10-09-2024 4.45.28 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>1</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>0</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='1%'><b>1</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>119</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>2</b> events failed, 
+            <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { " - Sup_RegistrationTest":146625.2677 };
+  </script>
+  <div class="row">
+      <div class="col-md-4 sysenv-container">
+      <div class="card">
+        <div class="card-header"><p>System/Environment</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Host Name</td>
+              <td>ELIT</td>
+            </tr>
+            <tr>
+              <td>Environment</td>
+              <td>QA</td>
+            </tr>
+            <tr>
+              <td>UserName</td>
+              <td>Mohan</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 1,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 121,
+
+passParent:0,failParent:1,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:119,failEvents:2,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
